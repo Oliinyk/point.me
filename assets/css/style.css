@@ -12,6 +12,13 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'adelle';
+    src: url('../fonts/adellesans-webfont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 *, *::after, *::before {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -55,10 +62,15 @@ body {
     word-wrap: break-word;
     font-family: 'adelle', 'helvetica', sans-serif;
     overflow-x: hidden;
+    padding-top: 100px;
 }
 a, a:hover, a:focus {
     transition: all .25s;
     text-decoration: none;
+}
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }
 a:hover, a:focus {
     color: #7257ea;
@@ -83,6 +95,12 @@ h4,
 h5,
 h6 {
     margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'garnett medium', 'helvetica', sans-serif;
+}
+.purple-text {
+    color: #6244E5;
 }
 .strike {
     text-decoration: line-through;
@@ -116,6 +134,9 @@ input[type=submit] {
     width: 100%;
     background-color: #fff;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -283,10 +304,121 @@ input[type=submit] {
     transform-origin: center;
 }
 
-.concierge-wrap {
+.concierge-section {
     background-color: #F8FCFD;
+    padding: 30px 0 50px;
+}
+.content-wrap {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.title-row .title-section {
+    font-size: 40px;
+}
+.title-row .subtitle {
+    font-size: 24px;
+}
+.concierge-section .card-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.concierge-section .card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 20px 25px 20px;
+    background-color: #fff;
+    border: 1px solid #e8eaeb;
+    border-radius: 8px;
+    background-image: url('../images/PurpeWaveVector.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+.card-item-img {
+    display: flex;
+    justify-content: center;
+}
+.card-item-title {
+    font-family: 'garnett semibold';
+    font-size: 18px;
+}
+.card-item-subtitle {
+    font-size: 16px;
+}
+.card-item .icon-list p {
+    font-size: 16px;
+}
+.card-item .icon-list-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 12px 0;
+}
+.card-item .icon-logo {
+    border-radius: 50%;
+    background-color: #DCFCF0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    padding: 4px;
+    margin-right: 16px;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
 }
 
+
+.card-item-footer {
+    margin-top: 16px;
+}
+.card-item-btn {
+    background-color: #F1F1FF;
+    border: 1px solid #6244E5;
+    border-radius: 4px;
+    color: #6244e5;
+    font-size: 15px;
+    transition: all 0.2s linear;
+    padding: 12px 24px;
+    display: block;
+    text-align: center;
+}
+.card-item-btn:hover {
+    color: #fff;
+    background: #7257ea;
+}
+
+
+@media (min-width: 575px) {
+    
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+  
+}
+@media (min-width: 1200px) {
+   
+}
+
+
+@media (max-width: 1200px) {
+    .content-wrap {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
 @media (max-width: 1020px) {
     .site-header.is-active {
         position: fixed;
@@ -376,22 +508,6 @@ input[type=submit] {
         text-align: center;
     }
 }
-
-
-@media (min-width: 575px) {
-    
-}
-@media (min-width: 768px) {
-
-}
-@media (min-width: 992px) {
-  
-}
-@media (min-width: 1200px) {
-   
-}
-
-
 @media (max-width: 767px) {
     .header-wrap {
         padding: 12px 0;
@@ -412,6 +528,12 @@ input[type=submit] {
     .mobmenu:active,
     .mobmenu:visited {
         height: 45px;
+    }
+    .title-row .title-section {
+        font-size: 22px;
+    }
+    .title-row .subtitle {
+        font-size: 14px
     }
 }
 
