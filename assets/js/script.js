@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (mobMenu && siteHeader) {
         mobMenu.addEventListener("click", function (event) {
             siteHeader.classList.toggle("is-active");
-            event.stopPropagation(); // Запобігає спрацьовуванню кліку на документ
+            event.stopPropagation();
         });
 
         document.addEventListener("click", function (event) {
