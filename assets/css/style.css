@@ -499,7 +499,25 @@ input[type=submit] {
 .tab-item-logo img {
     max-width: 128px;
 }
-
+.text-image-section {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.text-image-section .item-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-image-section .item-col {
+    width: 50%;
+}
+.text-image-section .img-col {
+    display: flex;
+    justify-content: flex-end;
+}
+.text-image-section .title-section {
+    font-size: 40px;
+    max-width: 450px;
+}
 
 @media (min-width: 575px) {
     
@@ -755,6 +773,9 @@ input[type=submit] {
         grid-template-rows: repeat(3, 1fr);
         row-gap: 20px;
         column-gap: 20px;
+    }
+    .text-image-section .title-section {
+        font-size: 20px;
     }
 }
 
