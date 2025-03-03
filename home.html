@@ -55,30 +55,31 @@
         </div>
     </header>
 
-    <!-- concierge section -->
-     <section class="concierge-section">
+    <!-- Start concierge section -->
+     <section class="concierge-section collapse-mob">
         <div class="content-wrap">
             <div class="title-row">
                 <div>
                     <h2 class="title-section"><strong>Concierge</strong></h2>
                     <p class="subtitle">Save time with our <span class="purple-text">concierge services</span></p>
                 </div>
-                <div>
+                <div class="title-img">
                     <img loading="lazy" src="assets/images/sleeping-dog.svg" alt="sleeping-dog">
                 </div>
             </div>
-
             <div class="card-row">
                 <div class="card-item">
                     <div class="card-item-body">
-                        <div class="card-item-img">
-                            <picture>
-                                <source type="image/webp" srcset="assets/images/webp/about_service.webp, assets/images/2x/webp/about_service@2x.webp">
-                                <source type="image/png" srcset="assets/images/about_service.png, assets/images/2x/about_service@2x.png 2x">
-                                <img loading="lazy" src="assets/images/about_service.png" alt="Full service flight booking">
-                            </picture>
+                        <div class="card-item-head">
+                            <div class="card-item-img">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/images/webp/about_service.webp, assets/images/2x/webp/about_service@2x.webp">
+                                    <source type="image/png" srcset="assets/images/about_service.png, assets/images/2x/about_service@2x.png 2x">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service.png" alt="Full service flight booking">
+                                </picture>
+                            </div>
+                            <h4 class="card-item-title">Full service flight booking</h4>
                         </div>
-                        <h4 class="card-item-title">Full service flight booking</h4>
                         <p class="card-item-subtitle">Get your time back and let an expert book for your next flight</p>
                         <div class="icon-list">
                             <div class="icon-list-item">
@@ -116,13 +117,15 @@
                 </div>
                 <div class="card-item">
                     <div class="card-item-body">
-                        <div class="card-item-img">
-                            <picture>
-                                <source type="image/png" srcset="assets/images/about_service2.png, assets/images/2x/about_service2@2x.png 2x">
-                                <img loading="lazy" src="assets/images/about_service2.png" alt="Elite status and mileage runs">
-                            </picture>
+                        <div class="card-item-head">
+                            <div class="card-item-img">
+                                <picture>
+                                    <source type="image/png" srcset="assets/images/about_service2.png, assets/images/2x/about_service2@2x.png 2x">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service2.png" alt="Elite status and mileage runs">
+                                </picture>
+                            </div>
+                            <h4 class="card-item-title">Elite status and mileage runs</h4>
                         </div>
-                        <h4 class="card-item-title">Elite status and mileage runs</h4>
                         <p class="card-item-subtitle">Take the guesswork out of hitting your next loyalty program level</p>
                         <div class="icon-list">
                             <div class="icon-list-item">
@@ -160,13 +163,15 @@
                 </div>
                 <div class="card-item">
                     <div class="card-item-body">
-                        <div class="card-item-img">
-                            <picture>
-                                <source type="image/png" srcset="assets/images/about_service3.png, assets/images/2x/about_service3@2x.png 2x">
-                                <img loading="lazy" src="assets/images/about_service3.png" alt="Points strategy consultation">
-                            </picture>
+                        <div class="card-item-head">
+                            <div class="card-item-img">
+                                <picture>
+                                    <source type="image/png" srcset="assets/images/about_service3.png, assets/images/2x/about_service3@2x.png 2x">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service3.png" alt="Points strategy consultation">
+                                </picture>
+                            </div>
+                            <h4 class="card-item-title">Points strategy consultation</h4>
                         </div>
-                        <h4 class="card-item-title">Points strategy consultation</h4>
                         <p class="card-item-subtitle">Maximize your award travel dreams with a customized earning strategy</p>
                         <div class="icon-list">
                             <div class="icon-list-item">
@@ -204,13 +209,15 @@
                 </div>
                 <div class="card-item">
                     <div class="card-item-body">
-                        <div class="card-item-img">
-                            <picture>
-                                <source type="image/png" srcset="assets/images/about_service4.png, assets/images/2x/about_service4@2x.png 2x">
-                                <img loading="lazy" src="assets/images/about_service4.png" alt="Custom packages">
-                            </picture>
+                        <div class="card-item-head">
+                            <div class="card-item-img">
+                                <picture>
+                                    <source type="image/png" srcset="assets/images/about_service4.png, assets/images/2x/about_service4@2x.png 2x">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service4.png" alt="Custom packages">
+                                </picture>
+                            </div>
+                            <h4 class="card-item-title">Custom packages</h4>
                         </div>
-                        <h4 class="card-item-title">Custom packages</h4>
                         <p class="card-item-subtitle">Not everything fits neatly into a box. Book a free consultation, and we’ll craft a custom quote that fits...</p>
                         <div class="icon-list">
                             <div class="icon-list-item">
@@ -248,8 +255,25 @@
                 </div>
             </div>
         </div>
+
+        <span type="button" class="open-btn">
+            <svg width="20" height="18" viewBox="0 0 20 18"><use xlink:href='#open-ico'/></svg>
+        </span>
      </section>
+     <!-- End concierge section -->
     
+    <!-- svg sprite -->
+    <div class="main_svg" hidden>
+        <svg>
+            <defs>
+                <!-- open-ico -->
+                <symbol id="open-ico" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6558 0.318417C18.37 0.325173 18.0985 0.444574 17.9004 0.650611L9.99966 8.55133L2.09895 0.650611C1.99799 0.546834 1.87726 0.464343 1.74388 0.408014C1.61051 0.351684 1.4672 0.322657 1.32242 0.322649C1.1069 0.322705 0.896307 0.387032 0.717546 0.507405C0.538786 0.627779 0.399985 0.798729 0.31889 0.9984C0.237795 1.19807 0.21809 1.41739 0.262294 1.62832C0.306499 1.83925 0.412604 2.0322 0.567044 2.18251L9.23371 10.8492C9.43688 11.0523 9.71239 11.1664 9.99966 11.1664C10.2869 11.1664 10.5624 11.0523 10.7656 10.8492L19.4323 2.18251C19.5896 2.03122 19.6976 1.83594 19.742 1.62225C19.7865 1.40855 19.7654 1.18642 19.6814 0.984929C19.5975 0.783443 19.4547 0.612006 19.2717 0.493076C19.0886 0.374145 18.874 0.313268 18.6558 0.318417ZM18.6558 6.81842C18.37 6.82517 18.0985 6.94457 17.9004 7.15061L9.99966 15.0513L2.09895 7.15061C1.99799 7.04683 1.87726 6.96434 1.74388 6.90801C1.61051 6.85168 1.4672 6.82266 1.32242 6.82265C1.1069 6.82271 0.896307 6.88703 0.717546 7.00741C0.538786 7.12778 0.399985 7.29873 0.31889 7.4984C0.237795 7.69807 0.21809 7.91739 0.262295 8.12832C0.306499 8.33925 0.412604 8.5322 0.567044 8.68251L9.23371 17.3492C9.43688 17.5523 9.71239 17.6664 9.99966 17.6664C10.2869 17.6664 10.5624 17.5523 10.7656 17.3492L19.4323 8.68251C19.5896 8.53122 19.6976 8.33594 19.742 8.12225C19.7865 7.90856 19.7654 7.68642 19.6814 7.48493C19.5975 7.28344 19.4547 7.11201 19.2717 6.99308C19.0886 6.87415 18.874 6.81327 18.6558 6.81842Z" fill="#6244E5"/>
+                </symbol>
+            </defs>
+        </svg>
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
