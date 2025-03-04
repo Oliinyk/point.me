@@ -24,6 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // price checkbox
+    const checkbox = document.getElementById("switch");
+    const priceElement = document.querySelector(".plan-main");
+    const descElement = document.querySelector(".plan-price-wrap .desc");
+
+    checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+            priceElement.textContent = "ONLY $10.75";
+            descElement.style.display = "block";
+        } else {
+            priceElement.textContent = "$12";
+            descElement.style.display = "none";
+        }
+    });
+
     //tab section
     const tabs = document.querySelectorAll(".tabs-label");
     const tabContents = document.querySelectorAll(".tab-content-item");
