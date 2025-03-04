@@ -110,9 +110,9 @@ h5,
 h6 {
     margin: 0;
 }
-/* h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'garnett medium', 'helvetica', sans-serif;
-} */
+}
 .purple-text {
     color: var(--primary-700);
 }
@@ -819,6 +819,7 @@ ul.check-list li {
     max-width: 128px;
 }
 .text-image-section {
+    background-color: #fff;
     padding-top: 70px;
     padding-bottom: 50px;
 }
@@ -871,6 +872,9 @@ ul.check-list li {
     font-size: 14px;
     margin: 18px 0 0;
 }
+.text-image-section .img-col .title-section {
+    display: none;
+}
 
 /* 7 */
 .quote-wrap {
@@ -887,6 +891,57 @@ ul.check-list li {
 .quote-ico {
     margin: 20px auto;
 }
+
+
+
+
+
+
+/*  */
+.stories-section {
+    padding: 70px 0 50px;
+}
+.stories-section .items-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    grid-auto-flow: column;
+    row-gap: 0px;
+    column-gap: 20px;
+}
+.trust-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 50px 30px 35px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.trust-item .img-holder {
+    margin-bottom: 25px;
+}
+.trust-item .img-holder img {
+    margin: 0 auto;
+}
+.trust-item .trust-item-title {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+.trust-item .trust-item-text {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.45;
+}
+.trust-item .trust-item-user {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 
 @media (min-width: 575px) {
     
@@ -1186,6 +1241,10 @@ ul.check-list li {
         row-gap: 20px;
         column-gap: 20px;
     }
+    .text-image-section {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
     .text-image-section .text-col {
         padding: 0;
     }
@@ -1195,7 +1254,32 @@ ul.check-list li {
     .text-image-section .subtitle {
         font-size: 14px;
     }
-
+    .text-image-section .item-row {
+        flex-direction: column-reverse;
+    }
+    .text-image-section .item-col {
+        width: 100%;
+    }
+    .text-image-section .img-col {
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 10px;
+    }
+    .text-image-section .img-col img {
+        max-width: 150px;
+    }
+    .text-image-section .text-col .title-section {
+        display: none;
+    }
+    .text-image-section .img-col .title-section {
+        display: block;
+    }
+    .check-list-purple li {
+        font-size: 14px;
+    }
+    .text-image-section .source-text {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 480px) {
