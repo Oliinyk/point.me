@@ -1661,3 +1661,20 @@ ul.check-list li {
         height: 85px !important;
     }
 }
+
+/* 4a */
+@media (max-width: 767px) {
+    .v-4a .pricing-card.card-ribbon {
+        order: 1;
+        margin-top: 24px;
+    }
+    .v-4a .more-option-title {
+        order: 2;
+    }
+    .v-4a .premium-card {
+        order: 3;
+    }
+    .v-4a .free-card {
+        order: 4;
+    }
+}
