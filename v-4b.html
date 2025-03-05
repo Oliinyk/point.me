@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>point.me</title>
+    <title>Annual Subscription Plans, Pricing, and Services | point.me</title>
+    <meta name="description" content="Learn about point.me's services and pricing, including annual memberships with access to self-serve flight award search and personalized services to help you find and book a flight with miles.">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -27,18 +28,18 @@
                                 <a href="https://www.point.me/explore" class="nav-link">Explore</a>
                             </li>
                             <li class="menu-item-has-icon menu-item">
-                                <a href="https://www.point.me/our-services" class="nav-link">Search <span class="menu-item-icon">
+                                <a href="#" class="nav-link" data-scroll=".section-pricing">Search <span class="menu-item-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-5 w-5 relative inline -mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></span>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="https://www.point.me/our-services/#concierge" class="nav-link">Concierge</a>
+                                <a href="#" class="nav-link" data-scroll=".concierge-section">Concierge</a>
                             </li>
                             <li class="purple-highlight-item menu-item">
                                 <a href="https://onemileatatime.com/pointme/best-travel-credit-cards/?omaatid=pmnavbar" class="nav-link">Earn points</a>
                             </li>
                             <li class="menu-item">
-                                <a href="https://www.point.me/our-services" class="nav-link">Pricing</a>
+                                <a href="https://www.point.me/our-services" class="nav-link" data-scroll=".section-pricing">Pricing</a>
                             </li>
                             <li class="menu-item">
                                 <a href="https://www.point.me/faq" class="nav-link">FAQ</a>
@@ -66,17 +67,19 @@
                         <li><b>Join 1 million+ travelers</b> who get better value from their points vs. using a credit card portal</li>
                         <li>Search <b>150+ airlines</b> and <b>30+ loyalty programs</b> in a single click</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">See Plans</a>
+                    <a href="#" class="btn btn-primary" data-scroll=".section-pricing">See Plans</a>
                 </div>
                 <div class="hero-img-wrap">
                     <h4 class="img-title">A single trip pays for the membership many times over</h4>
                     <p class="img-subtitle">Real flights our members booked recently</p>
-
                     <div class="card-wrap">
-
                         <div class="card-item">
                             <p class="btn btn-transparent">$2,500 saved</p>
-                            <img class="card-img" src="assets/images/london.jpg" alt="new-york-london">
+                            <picture>
+                                <source srcset="assets/images/2x/webp/london@2x.webp 2x, assets/images/webp/london.webp 1x" type="image/webp">
+                                <source srcset="assets/images/2x/london@2x.png 2x, assets/images/london.png 1x" type="image/png">
+                                <img src="assets/images/london.png" alt="new-york-london" loading="lazy" class="card-img">
+                            </picture>
                             <div class="card-desc">
                                 <p class="card-title">Business Class</p>
                                 <p class="card-subtitle">
@@ -97,10 +100,13 @@
                                 <p class="purple-text">(83% saved)</p>
                             </div>
                         </div>
-
                         <div class="card-item">
                             <p class="btn btn-transparent">$3,500 saved</p>
-                            <img class="card-img" src="assets/images/tokyo.jpg" alt="los-angeles-tokyo">
+                            <picture>
+                                <source srcset="assets/images/2x/webp/tokyo@2x.webp 2x, assets/images/webp/tokyo.webp 1x" type="image/webp">
+                                <source srcset="assets/images/2x/tokyo@2x.png 2x, assets/images/tokyo.png 1x" type="image/png">
+                                <img src="assets/images/tokyo.png" alt="los-angeles-tokyo" loading="lazy" class="card-img">
+                            </picture>
                             <div class="card-desc">
                                 <p class="card-title">First Class</p>
                                 <p class="card-subtitle">Los Angeles
@@ -119,10 +125,13 @@
                                 <p class="purple-text">(83% saved)</p>
                             </div>
                         </div>
-
                         <div class="card-item">
                             <p class="btn btn-transparent">$2,450 saved</p>
-                            <img class="card-img" src="assets/images/hawaii.jpg" alt="los-angeles-hawaii">
+                            <picture>
+                                <source srcset="assets/images/2x/webp/hawaii@2x.webp 2x, assets/images/webp/hawaii.webp 1x" type="image/webp">
+                                <source srcset="assets/images/2x/hawaii@2x.png 2x, assets/images/hawaii.png 1x" type="image/png">
+                                <img src="assets/images/hawaii.png" alt="los-angeles-hawaii" loading="lazy" class="card-img">
+                            </picture>
                             <div class="card-desc">
                                 <p class="card-title">Business Class</p>
                                 <p class="card-subtitle">Los Angeles
@@ -142,7 +151,6 @@
                             </div>
                         </div>
                     </div>
-
                     <p class="desc">*Based on actual member bookings compared to credit card portal rates, assumes $0.01 per point value</p>
                 </div>
             </div>
@@ -208,7 +216,7 @@
                         <li>See sample deals to your dream destinations (<u>upgrade to select specific airports</u> in live search).</li>
                         <li>Get exclusive weekly points deals via email.</li>
                     </ul>
-                    <a href="#" class="btn btn-secondary">Explore for free</a>
+                    <a href="https://www.point.me/signup/basic" class="btn btn-secondary">Explore for free</a>
                 </div>
                 <div class="pricing-card card-ribbon">
                     <h5 class="pricing-ribbon ribbon-popular">MOST POPULAR</h5>
@@ -219,7 +227,7 @@
                         <li>Step-by-step booking instruction</li>
                         <li>Award flight deal alerts</li>
                         <li>Unlock search filters and discover where you can go with your points for specific travel dates.</li>
-                        <li>See sample deals to your dream destinations (<u>upgrade to select specific airports</u> in live search).</li>
+                        <li>See live deals from your preferred airports to your dream destinations.</li>
                         <li>Get exclusive weekly points deals via email.</li>
                     </ul>
                     <div class="plan-price-wrap">
@@ -233,7 +241,7 @@
                         </p>
                         <p class="desc">(billed as $129 annually)</p>
                     </div>
-                    <a href="#" class="btn btn-primary">Get Started Now</a>
+                    <a href="https://www.point.me/signup/standard" class="btn btn-primary">Get Started Now</a>
                 </div>
                 <div class="more-option-title">
                     <p>More options</p>
@@ -254,7 +262,7 @@
                             </p>
                             <p class="desc">(billed as $260 annually)</p>
                         </div>
-                        <a href="#" class="btn btn-secondary">Get Started Now</a>
+                        <a href="http://point.me/signup/premium" class="btn btn-secondary">Get Started Now</a>
                     </div>
                     <span class="open-btn">
                         <svg width="20" height="18" viewBox="0 0 20 18"><use xlink:href='#open-ico'/></svg>
@@ -282,8 +290,9 @@
                         <div class="card-item-head">
                             <div class="card-item-img">
                                 <picture>
-                                    <source type="image/png" srcset="assets/images/about_service.png, assets/images/2x/about_service@2x.png 2x">
-                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service.png" alt="Full service flight booking">
+                                    <source srcset="assets/images/2x/webp/about_service@2x.webp 2x, assets/images/webp/about_service.webp 1x" type="image/webp">
+                                    <source srcset="assets/images/2x/about_service@2x.png 2x, assets/images/about_service.png 1x" type="image/png">
+                                    <img src="assets/images/about_service.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
                                 </picture>
                             </div>
                             <h4 class="card-item-title">Full service flight booking</h4>
@@ -328,8 +337,9 @@
                         <div class="card-item-head">
                             <div class="card-item-img">
                                 <picture>
-                                    <source type="image/png" srcset="assets/images/about_service2.png, assets/images/2x/about_service2@2x.png 2x">
-                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service2.png" alt="Elite status and mileage runs">
+                                    <source srcset="assets/images/2x/webp/about_service2@2x.webp 2x, assets/images/webp/about_service2.webp 1x" type="image/webp">
+                                    <source srcset="assets/images/2x/about_service2@2x.png 2x, assets/images/about_service2.png 1x" type="image/png">
+                                    <img src="assets/images/about_service2.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
                                 </picture>
                             </div>
                             <h4 class="card-item-title">Elite status and mileage runs</h4>
@@ -374,8 +384,9 @@
                         <div class="card-item-head">
                             <div class="card-item-img">
                                 <picture>
-                                    <source type="image/png" srcset="assets/images/about_service3.png, assets/images/2x/about_service3@2x.png 2x">
-                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service3.png" alt="Points strategy consultation">
+                                    <source srcset="assets/images/2x/webp/about_service3@2x.webp 2x, assets/images/webp/about_service3.webp 1x" type="image/webp">
+                                    <source srcset="assets/images/2x/about_service3@2x.png 2x, assets/images/about_service3.png 1x" type="image/png">
+                                    <img src="assets/images/about_service3.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
                                 </picture>
                             </div>
                             <h4 class="card-item-title">Points strategy consultation</h4>
@@ -420,8 +431,9 @@
                         <div class="card-item-head">
                             <div class="card-item-img">
                                 <picture>
-                                    <source type="image/png" srcset="assets/images/about_service4.png, assets/images/2x/about_service4@2x.png 2x">
-                                    <img class="img-fluid" loading="lazy" src="assets/images/about_service4.png" alt="Custom packages">
+                                    <source srcset="assets/images/2x/webp/about_service4@2x.webp 2x, assets/images/webp/about_service4.webp 1x" type="image/webp">
+                                    <source srcset="assets/images/2x/about_service4@2x.png 2x, assets/images/about_service4.png 1x" type="image/png">
+                                    <img src="assets/images/about_service4.png" alt="Full service flight booking" loading="lazy" class="img-fluid">
                                 </picture>
                             </div>
                             <h4 class="card-item-title">Custom packages</h4>
@@ -470,7 +482,7 @@
     <!-- End concierge section -->
 
     <!-- Start tab section -->
-    <section class="tab-section">
+    <section class="section tab-section">
         <div class="content-wrap">
             <div class="title-row">
                 <div>
@@ -564,7 +576,7 @@
                     </div>
                 </div>
                 <div class="btn-holder">
-                    <a href="https://www.point.me/our-services" class="btn">Get started</a>
+                    <a href="https://www.point.me/our-services" class="btn" data-scroll=".section-pricing">Get started</a>
                 </div>
             </div>
         </div>
@@ -599,8 +611,12 @@
     <!-- Start quote section --> 
     <div class="section section-quote"> 
         <div class="content-wrap"> 
-            <div class="quote-wrap"> 
-                <img class="quote-img" src="assets/images/tiffany-funk.png" alt="tiffany-funk"> 
+            <div class="quote-wrap">
+                <picture>
+                    <source srcset="assets/images/2x/webp/tiffany-funk@2x.webp 2x, assets/images/webp/tiffany-funk.webp 1x" type="image/webp">
+                    <source srcset="assets/images/2x/tiffany-funk@2x.png 2x, assets/images/tiffany-funk.png 1x" type="image/png">
+                    <img src="assets/images/tiffany-funk.png" alt="tiffany-funk" loading="lazy" class="quote-img">
+                </picture>
                 <img class="quote-ico" src="assets/images/quote.svg" alt="quote-ico"> 
                 <p class="quote-title"> 
                     I hear all the time from business travelers who ‘saved their miles for retirement,’ and are devastated to learn that the purchasing power of their miles isn't what it would have been five, ten, fifteen years ago. I personally invite you to join now and get 6x - 12x more value from your points. 
@@ -673,7 +689,11 @@
         <div class="content-wrap">
             <div class="item-row">
                 <div class="item-col img-col">
-                    <img class="img-fluid" loading="lazy" src="assets/images/details.png" alt="details">
+                    <picture>
+                        <source srcset="assets/images/2x/webp/details@2x.webp 2x, assets/images/webp/details.webp 1x" type="image/webp">
+                        <source srcset="assets/images/2x/details@2x.png 2x, assets/images/details.png 1x" type="image/png">
+                        <img src="assets/images/details.png" alt="details" loading="lazy" class="img-fluid">
+                    </picture>
                 </div>
                 <div class="item-col text-col">
                     <div class="text-holder">
@@ -708,7 +728,11 @@
                     </div>
                 </div>
                 <div class="item-col img-col">
-                    <img class="img-fluid" loading="lazy" src="assets/images/male-paris.png" alt="male-paris">
+                    <picture>
+                        <source srcset="assets/images/2x/webp/male-paris@2x.webp 2x, assets/images/webp/male-paris.webp 1x" type="image/webp">
+                        <source srcset="assets/images/2x/male-paris@2x.png 2x, assets/images/male-paris.png 1x" type="image/png">
+                        <img src="assets/images/male-paris.png" alt="male-paris" loading="lazy" class="img-fluid">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -727,9 +751,9 @@
                 <ul class="f-col foo-list">
                     <li><h6 class="list-title">Products</h6></li>
                     <li><a href="https://www.point.me/explore">Explore</a></li>
-                    <li><a href="https://www.point.me/our-services">Search</a></li>
-                    <li><a href="https://www.point.me/our-services#concierge">Concierge</a></li>
-                    <li><a href="https://www.point.me/our-services">Pricing</a></li>
+                    <li><a href="#" data-scroll=".section-pricing">Search</a></li>
+                    <li><a href="#" data-scroll=".concierge-section">Concierge</a></li>
+                    <li><a href="#" data-scroll=".section-pricing">Pricing</a></li>
                     <li><a href="https://connect.point.me/hotels">Hotels</a></li>
                 </ul>
                 <ul class="f-col foo-list">
@@ -807,6 +831,5 @@
 
     <script src="assets/js/script.js"></script>
     <script src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-
 </body>
 </html>
