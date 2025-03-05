@@ -223,6 +223,7 @@ a {
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
+    justify-content: flex-start;
 }
 .site-header .site-logo {
     display: flex;
@@ -1111,6 +1112,9 @@ ul.check-list li {
 }
 .social-list a:hover svg {
     fill: var(--a-link);
+}
+.footer {
+    background: #fff;
 }
 @media (min-width: 768px) {
     .title {
