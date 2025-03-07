@@ -1146,6 +1146,15 @@ ul.check-list li {
         right: -20px;
         left: auto;
     }
+    .section-logo ul li {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .concierge-section .title-img img {
+        height: 174px;
+    }
 }
 @media (max-width: 1270px) {
     .hero-img-wrap {
