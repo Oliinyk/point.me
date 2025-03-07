@@ -1342,6 +1342,7 @@ ul.check-list li {
     }
     .hero .check-list {
         font-size: 16px;
+        font-family: 'helvetica', Arial, sans-serif;
     }
     .hero .card-item {
         max-width: 350px;
